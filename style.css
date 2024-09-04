@@ -1,46 +1,121 @@
-.w-15{
-    width: 15%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left, .right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .center {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .card {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    color: white;
-    margin: 10px;
-  }
-  .supervisor { background-color: #007bff; }
-  .team-builder { background-color: #28a745; }
-  .karma { background-color: #dc3545; }
-  .calculator { background-color: #ffc107; }
+body{
+    background-color: hsl(0, 0%, 98%)!important;
+}
+
+.description{
+    width: 34rem;
+    margin-left: 36%;
+}
+
+.fw-thin{
+    font-weight: 200;
+}
+
+.ww-25{
+    width: 30%;
+}
+
+.w-m{
+    width: 60%;
+    margin-left: 7rem;
+}
+
+.h-40{
+    height: 50%;
+}
+
+.mt-more{
+    margin-top: 3rem;
+}
+
+.mt-karma{
+    margin-top: 2rem;
+}
+
+.mt-sides{
+    margin-top: 8rem;
+}
+
+.sup-bt{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.team-bt{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.karma-bt{
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.calc-bt{
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.content-side{
+    margin-left: 2rem;
+}
+
+.svg-side{
+    margin-left: 70%;
+    margin-top: 3rem;
+}
+
+.supervisor,.team-builder, .karma, .calculator{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.supervisor,.team-builder, .karma, .calculator > p{
+    font-size: 14px;
+}
+
+@media (max-width: 760px) {
+    .container {
+        flex-direction: column; /* Kartları alt alta sıralar */
+        align-items: center; /* Kartları ortalar */
+    }
+
+    .description{
+        margin-left: 5rem;
+        width: 20rem;
+    }
+
+    .supervisor{
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        width: 17rem;
+        margin-left: -4.25rem;
+    }
+
+    .calculator{
+        margin-bottom: 1rem;
+        width: 17rem;
+        margin-left: -3rem;
+        margin-top: 2rem;
+        margin-left: -4.25rem;
+    }
+
+    .karma{
+        margin-left: 5.8rem;
+    }
+
+    .team-builder{
+        margin-left: 5.8rem;
+    }
+}
+
+
+
+
+
+
+
+  
